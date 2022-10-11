@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="hero-image">
+
+    <nav id="navigation">
+        <div class="container">
+            <div class = "nav-bar">
+        <img src="Asset/img/Spotify_Logo_CMYK_White.png" alt="logo" class="logo" id="header-img">
+        <ul class="tabs">
+        </li><a href="#header" class="nav-link">Home</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#payments" class="nav-link">Payments</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+        </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Main Header -->
+    <header id="header">
+        <div class="container main-header">
+            <h1>Music you love, right at your fingertips</h1>
+            <p>All the music you'll ever need is right here. Your favorite artists,
+                albums and readymade playlists for every moment.</p>
+
+            <button onclick="document.getElementById('form').style.display='block'" class="button">Sign Up</button>
+
+            <div id="form" class="frm">
+              
+              <form class="frm-content animate" method="post">
+                  <span onclick="document.getElementById('form').style.display='none'" class="close">&times;</span>
+        
+            
+                <div class="frm-container" id="frm-container-two">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  
+                <label for="email"><b>Email Address</b></label>
+                  <input type="email" placeholder="Enter Email Address" name="email" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit" class="button-one">Sign Up</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                  </label>
+                </div>
+            
+                <div class="frm-btn-container" style="background-color:#f1f1f1">
+                  <button type="button" id = "submit" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+
+            <!--End of Div Main Header-->
+        </div>
+        
+    </header>
+    </div>      <!-- Hero Image div-->
+<!-- Gallery -->
+    <section id="gallery">
+        <div class="container gallery">
+             <ul class="vid-txt">  
+            <li><iframe id="video" src="https://www.youtube.com/embed/-X_2TT43PRs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+
+            
+            <li>  
+            <div class = gallery-txt>  
+            <h1>Discover how you <span>listen.</span></h1>
+            <p>Explore your music taste profile and create awesome playlists.</p>
+            <a href="#payments"><button class="gallery-btn">Play now</button></a>
+            </div>
+            </li>
+        </ul>
+            <!-- </div> -->
+        </div>
+    </section>
+
+<!--Payments-->
+    <section id="payments">
+        <div class="container payments">
+            <h1 class = "payments-txt">Pick your Premium</h1>
+            <p class = "payments-txt">Listen without limits on your phone, speaker, and other devices.</p>
+        
+        <div class="pay-methods">
+            
+            <div class="pmethods"  id="pmethods-one">
+            <h2>Mini</h2>
+            <p>From P7/day</p>
+            <p>1 account on mobile only</p>
+            <br>
+            <hr>
+            <br>
+            <ul class="list list-one">
+                <li><span>Ad-free music listening on mobile</span></li>
+                <li><span>Group Session</span></li>
+                <li><span>Download 30 songs on 1 mobile</span></li>
+                <p>device</p>
+            </ul>
+
+            <button class="button" id="btn-one">Get started</button>
+            </div>
+
+                <div class="pmethods" id="pmethods-two">
+                    <h2>Individual</h2>
+                    <p>P129/month</p>
+                    <p>1 account</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul class="list list-two">
+                        <li><span>Ad-free music listening</span></li>
+                        <li><span>Play anywhere- even offline</span></li>
+                        <li><span>On-demand playback</span></li>
+                        <li><span>One-time subscription plans</span></li>
+                    </ul>
+
+                    <button class="button" id="btn-two">Get started</button>
+                </div>
+
+                <div class="pmethods" id="pmethods-three">
+                    <h2>Family</h2>
+                    <p>P194/month</p>
+                    <p>Up to 6 accounts</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul class="list list-three">
+                        <li><span>6 Premium accounts for family</span></li>
+                        <p>members living under one roof</p>
+                        <li><span>Block explicit music</span></li>
+                        <li><span>Ad-free music listening, play</span></li>
+                        <p>offline, on-demand playback</p>
+                    </ul>
+    
+    
+                    <button class="button" id="btn-three">Get started</button>
+                </div>
+             </div>
+             <p class = "payments-txt">Terms and conditions apply.</p>
+        </div> 
+    </section>
+    <!-- About Us -->
+    <section id="about">
+        <div class="container about">
+            
+            <div class ="list-container">
+            <ul class="about-lists">
+                <li><span>Company</span></li>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>For the Record</li>
+            </ul>
+
+            <ul class="about-lists">
+                <li><span>Communities</span></li>
+                <li>For Artists</li>
+                <li>Developers</li>
+                <li>Advertising</li>
+                <li>Investors</li>
+                <li>Vendors</li>
+            </ul>
+
+            <ul class="about-lists">
+                <li><span>Useful Links</span></li>
+                <li>Support</li>
+                <li>Web Player</li>
+                <li>Free Mobile App</li>
+            </ul>
+        </div>
+            <ul class="icons">
+                <li><img src="Product/img/facebook.png" alt=""></li>
+                <li><img src="Product/img/instagram.png" alt=""></li>
+                <li><img src="Product/img/twitter.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer id = "main-footer">
+        <div class="container footer">
+
+            <div class = "ftr-txt" id="ftr-one"><p>Legal</p></div>
+            <div class = "ftr-txt" id="ftr-two"><p>Private Center</p></div>
+            <div class = "ftr-txt" id="ftr-three"><p>&copy 2022 Spotify AB</p></div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
